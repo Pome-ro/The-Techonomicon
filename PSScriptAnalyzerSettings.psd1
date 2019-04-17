@@ -1,4 +1,0 @@
-# PSScriptAnalyzerSettings.psd1
-@{
-
-}
