@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\3rdparty\extensions\cjpalhdlnbpafiamejdnhcphjbkeiagm\policy]
+"adminSettings"="{\"autoUpdate\":true,\"netWhitelist\":\"about-scheme\\nbehind-the-scene\\nchrome-extension-scheme\\nchrome-scheme\\nlocalhost\\nloopconversation.about-scheme\\nopera-scheme\\nplay.dreambox.com\"}"
+
