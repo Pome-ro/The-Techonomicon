@@ -1,7 +1,7 @@
 $Header = "ID", "TeacherNumber", "SchoolID", "Last_Name", "First_Name", "status", "email"
-$teachers = Import-Csv -Path \\server\automation\teachers.csv -Header $Header
+$teachers = Import-Csv -Path \\mps-ps-1\d$\automation\teachers.csv -Header $Header
 $teachers = $teachers | where { $_.status -eq 1 }
-$cred = Get-Credential
+#$cred = Get-Credential
 
 $usersNotFound = @()
 foreach ($teacher in $teachers) {
@@ -9,8 +9,8 @@ foreach ($teacher in $teachers) {
     if ($un -ne $null) {
         $username = $un[0]
         try {
-            $adobj = get-aduser -Identity $username -Properties employeeNumber -Credential $cred;
-            Set-ADObject -Identity $adobj -Replace @{employeeNumber = $teacher.TeacherNumber} -Credential
+            $adobj = get-aduser -Identity $username -Properties employeeNumber # -Credential $cred;
+            Set-ADObject -Identity $adobj -Replace @{employeeNumber = $teacher.TeacherNumber } # -Credential $cred;
         }
         catch {
             $Teacher | Add-Member -NotePropertyName Username -NotePropertyValue $username
