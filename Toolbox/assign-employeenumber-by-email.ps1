@@ -1,5 +1,5 @@
 $Header = "ID", "TeacherNumber", "SchoolID", "Last_Name", "First_Name", "status", "email"
-$teachers = Import-Csv -Path \\mps-ps-1\d$\automation\teachers.csv -Header $Header
+$teachers = Import-Csv -Path \\server\automation\teachers.csv -Header $Header
 $teachers = $teachers | where { $_.status -eq 1 }
 #$cred = Get-Credential
 
