@@ -1,0 +1,18 @@
+{
+    "whitelist": [
+        "# edge-scheme",
+        "# moz-extension-scheme",
+        "# vivaldi-scheme",
+        "# wyciwyg-scheme",
+        "about-scheme",
+        "behind-the-scene",
+        "chrome-extension-scheme",
+        "chrome-scheme",
+        "localhost",
+        "loopconversation.about-scheme",
+        "opera-scheme",
+        "play.dreambox.com",
+        "seesaw.me",
+        "goguardian.com"
+    ]
+}

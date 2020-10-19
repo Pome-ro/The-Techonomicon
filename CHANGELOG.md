@@ -1,3 +1,6 @@
+# 10/19/2020
+* Updated the UblockOrigin-Allowlist. 📈
+
 # 03/02/2020
 * Added my Powershell Profile and some helperfunctions. 🧙‍♂️
 
