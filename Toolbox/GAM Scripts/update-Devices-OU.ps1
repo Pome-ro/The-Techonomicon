@@ -11,18 +11,16 @@ $SchoolOU = @{
     VN = "Vinton"
     SE = "Southeast"
     GN = "Goodwin"
-    CD = "ChromeDiag"
+    Loaner = "Loaner Devices"
 }
 
 #$CSV = "C:\users\pomeroyte\Desktop\Unassigneddevices.csv"
 #$Devices = Import-Csv $CSV
-$Devices = "list",
-"of",
-"serialnumbers",
+$Devices =
 
 $Devices.Count
 
-$OU = $RootOU + $SchoolOU.CD
+$OU = $RootOU + $SchoolOU.Loaner
 
 foreach ($item in $Devices) {
     Write-Host "Moving " $Item "to $OU" -ForegroundColor Green
