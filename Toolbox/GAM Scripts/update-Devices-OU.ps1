@@ -8,9 +8,9 @@ This script intakes a list of devices and sets their OU either based on some var
 $RootOU = "/MPS Devices/"
 
 $SchoolOU = @{
-    VN = "Vinton"
-    SE = "Southeast"
-    GN = "Goodwin"
+    VN     = "Vinton"
+    SE     = "Southeast"
+    GN     = "Goodwin"
     Loaner = "Loaner Devices"
 }
 
@@ -22,8 +22,18 @@ $Devices.Count
 
 $OU = $RootOU + $SchoolOU.Loaner
 
-foreach ($item in $Devices) {
+foreach ($SerialNumber in $Devices) {
     Write-Host "Moving " $Item "to $OU" -ForegroundColor Green
-    $SerialNumber = "query:id:" + $item
-    C:\gam\gam.exe update cros $SerialNumber ou $OU
+    $Query = "query:id:" + $SerialNumber
+
+    ## Update Device OU
+    #C:\gam\gam.exe update cros $Query ou $OU
+
+    ## Disable Device
+    #C:\gam\gam.exe gam update cros $Query action disable
+
+    # Deprovision Device
+    #C:\gam\gam.exe gam update cros $Query action deprovision_retiring_device acknowledge_device_touch_requirement
+
+
 }
