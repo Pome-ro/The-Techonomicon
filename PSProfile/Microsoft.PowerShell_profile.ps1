@@ -1,9 +1,3 @@
-
-$env:ConEmuANSI = $True
-Import-Module posh-git
-
-. $psscriptroot\config.ps1
-
 function trunk-path ($path) {
     $segments = $path.split('\')
     if ($segments.count -gt 4) {
@@ -20,6 +14,20 @@ function trunk-path ($path) {
     }
 }
 
+
+Import-Module posh-git
+$currentFunctions = Get-ChildItem function:
+
+$profile | add-member -Name "config" -MemberType NoteProperty -Value $psscriptroot\config.ps1
+. $profile.config
+Write-Host "♦♦ Loading Custom Functions" -ForegroundColor Yellow
+$profile | add-member -name "functions" -MemberType NoteProperty -Value (Get-ChildItem function: | Where-Object { $currentFunctions -notcontains $_ })
+Write-Host "♦♦ $($profile.functions.count) Custom Functions Loaded"  -ForegroundColor Yellow
+Write-Host "♦♦ Type [Show-Functions] to list the Custom Functions"  -ForegroundColor Yellow
+
+function Show-Functions {
+    Write-Host $profile.functions.name -ForegroundColor Green
+}
 
 function prompt {
     $battery = Get-WmiObject win32_battery
@@ -44,7 +52,7 @@ function prompt {
     Write-Host "$batteryRunTime hours" -NoNewline -ForegroundColor Cyan -BackgroundColor $backgroundColor
 
 
-    Write-Host "██▓▓▓▒▒▒░░" -ForegroundColor $backgroundColor
+    Write-Host "▓▓▓▒▒▒░░" -ForegroundColor $backgroundColor
 
     write-host "[" -NoNewline -ForegroundColor yellow
     write-host $env:username.toupper() -NoNewline -ForegroundColor White
