@@ -1,3 +1,6 @@
+# 2022-03-07
+* added a gam script for fixing users who have directory sharing disabled on their Google Accounts
+
 # 2022-03-04
 * Had a need to generate a Yubikey Public ID recently. Made a small function that does just that.
 * Added a placeholder file that will eventually be a script to push the Install iOS update and Reboot command to iPads in JAMF. Goal is to set that script on a schedule so they automatically get the update and reboot command on a regular interval.
