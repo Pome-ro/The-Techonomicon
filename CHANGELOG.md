@@ -1,3 +1,6 @@
+# 2022-03-21
+* added bitlocker TPM data script to be used as a PDQ Powershell Scanner. Collects information to help aid in identifying devices not ready for Bitlocker deployment.
+
 # 2022-03-07
 * added a gam script for fixing users who have directory sharing disabled on their Google Accounts
 
