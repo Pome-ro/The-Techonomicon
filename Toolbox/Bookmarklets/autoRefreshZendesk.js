@@ -7,7 +7,7 @@ Description:
 Instructions:
     1. Add a new bookmark to your bookmark bar (chrome or firefox).
     2. Name the bookmark something you'll understand (Enable Zendesk Autorefresh).
-    3. Copy the code below from line 13 to line 66 and paste it into the URL field.
+    3. Copy the code below from line 16 to line 66 and paste it into the URL field.
     4. Navitage to a view in Zendesk.
     5. Click the bookmark to activate the code.
     To deactivate the code, simply reload the page.
