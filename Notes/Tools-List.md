@@ -1,30 +1,35 @@
-**Cable Management**
+## Cable Management
+
 - Roll of Velcro
 - Various Zip Ties
 - Velco with adhesive
 - Nano Tape
 
-**Connectors**
+## Connectors
+
 - Console cable
 - Serial Cable or USB to serial adapter.
 - 3 to 6ft Cat Cable
 - Cat5e crossover cable.
 
-**Cabling Tools**
+## Cabling Tools
+
 - 110 punch tool.
 - RJ45/RJ11-RJ12 EZ crimper.
 - Spare male/female EZ RJ-45 ends.
 - Rack machine screws/bolts
 - Cage nuts for racks (never buy round hole racks)
 
-**Adapters**
+## Adapters
+
 - USB C to USB 3 converters
 - SATA to USB + Power
 - USB3 to LAN gigabit
 - USB3 to DVD (if needed)
 - USB C to VGA/HDMI
 
-**Accessories**
+## Accessories
+
 - headlamp
 - pen light
 - High lumens flash light
@@ -39,7 +44,8 @@
 - Multi-voltage battery charger; to pre-charge UPS batteries before they get installed. Not as hard on the UPS, most batteries do not come fully charged
 - Baking soda to help neutralize battery acid.
 
-**Hand Tools**
+## Hand Tools
+
 - Precision driver set and handle
 - Basic spudger and pry tools
 - Heat gun
@@ -53,21 +59,25 @@
 - Wood and metal chisels
 - Length of 4-6ft length of 2x4 and 1x4, or just a 6 ft non-conductive prybar, to pry out batteries from a UPS.
 
-**Cutters**
+## Cutters
+
 - Side cutters
 - Pipe cutter
 - Tin snips
 - Hack saw
 
-**Power Tools & Accessories**
+## Power Tools & Accessories
+
 - Drill bit set
 - Cordless Hammer Drill
 
-**Portable Storage**
+## Portable Storage
+
 - M.2/SATA SSD enclosures
 - USB 3 Drives
 
-**Troubleshooting Tools**
+## Troubleshooting Tools
+
 - Tone and trace kit
 - LAN tester
 - GCFI 3 prong tester
@@ -78,7 +88,8 @@
 - Cable toner
 - Cat5 cable tester (one that tests more than just wiremap; length, signal strength, ect... Fluke comes to mind)
 
-**Device Repair Accessories**
+## Device Repair Accessories
+
 - Electrical tape.
 - Magnetic dry-erase mat
 - 10" tablets for manuals/reference
@@ -91,7 +102,8 @@
 - Soldering iron and silver based solder.
 - Mako or Manta specialty driver set from iFixit
 
-**Printer Tools**:
+## Printer Tools:
+
 - Toner vacuums
 - mm socket set
 - extra long bits and a good ratcheting handle
@@ -100,16 +112,9 @@
 - hook and pick set
 - long double x pliers
 
-**Expensive Tools**
+## Expensive Tools
+
 - Fluke AirCheck
 - Fluke LinkIQ or Microscanner (will need CDP capture device if not the LinkIQ)
 - 2-in-1 laptops - Touchscreen - Win 11 ready
 - Ekahau survey system (if you are in house)
-
-
-
-
-
-
-
-
