@@ -1,5 +1,5 @@
-$Searchbase = "OU=2026,OU=OUstudents,OU=All-Users,OU=_MMS,DC=mps,DC=mansfieldct,DC=net"
-$CSVPath = "~\desktop\NewPasswords-2.csv"
+$Searchbase = "OU=2027,OU=MES Students,OU=Students,OU=Users,OU=_Mansfield Public Schools,DC=mps,DC=mansfieldct,DC=net"
+$CSVPath = "~\desktop\5th-grade-passwords.csv"
 
 $Users = Get-ADUser -SearchBase $Searchbase -Filter * -Properties DisplayName, UserPrincipalName, EmployeeID
 
@@ -17,3 +17,4 @@ foreach ($person in $users) {
     $Results += $Data
 }
 $Results | ConvertTo-Csv | Out-File -FilePath $CSVPath
+Start-Process $CSVPath
